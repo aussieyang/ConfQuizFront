@@ -14,40 +14,7 @@ var Questions = Backbone.Collection.extend({
 
 console.log(Questions);
 
-var Router = Backbone.Router.extend({
 
-routes: {
-		"hhh": "showIndex",
-		"": "showQuestion"
-
-},
-
-showIndex: function(){
-
-},
-
-showQuestion: function(){
-	question = new Question({id: 21});
-	console.log(question);
-	question.fetch().done(function(){
-		console.log(question);
-		$('#qid').html(question.get('content'));
-		$('#answer1').html(question.get('a'));
-		$('#answer2').html(question.get('b'));
-		$('#answer3').html(question.get('c'));
-		$('#answer4').html(question.get('d'));
-	});
-}
-
-
-
-});
-
-$(document).ready( function() {
-  console.log('Initiating router...');
-  var router = new Router();
-  Backbone.history.start();
-});
 
 
 
