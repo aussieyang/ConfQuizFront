@@ -17,6 +17,11 @@ body {
   text-align: center;
 }
 
+.modal-content {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
 
 /* inflexible bootstrap nightmare */
 #qid {
