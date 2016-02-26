@@ -2,9 +2,10 @@ console.log('working as well');
 
 
 var Question = Backbone.Model.extend({
-
 	urlRoot: 'http://localhost:3000/api/questions'
 });
+
+
 
 var Questions = Backbone.Collection.extend({
 	model: Question,
