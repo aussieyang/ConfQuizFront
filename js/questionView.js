@@ -3,7 +3,7 @@ var QuestionView = Backbone.View.extend({
 
 //Wraps in div with class
   tagName: 'div',
-  className: 'question',
+  className: 'container',
   template: $('#question-template').html(),
 
 //Render the div
