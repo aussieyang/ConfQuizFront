@@ -1,8 +1,8 @@
 var Router = Backbone.Router.extend({
 
     routes: {
-    		"": "showIndex",
-    		"question": "showQuestion"
+    		"#": "showIndex",
+    		"": "showQuestion"
     },
 
     showIndex: function(){
@@ -25,6 +25,7 @@ var Router = Backbone.Router.extend({
 
       var view = new QuestionView({ model: question });
       $('main').html( view.render().el );
+
 
     }
 
